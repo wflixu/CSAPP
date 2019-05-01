@@ -6,8 +6,17 @@
         {
             "label": "gcc",
             "command": "gcc",
-            "args": ["-g","${file}","-o","dist/${fileBasenameNoExtension}.exe"],
-            "windows": {}
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "dist/${fileBasenameNoExtension}.exe"
+            ],
+            "windows": {},
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
